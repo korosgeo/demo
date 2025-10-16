@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "3dc33cff-ab84-42cf-9ac6-6f7b9231cc43",
+		"name": "demo project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5923902",
+		"_collection_link": "https://martian-crescent-123897.postman.co/workspace/xITee-AOK~280fa609-7b60-4f98-b155-977daf96ecde/collection/5923902-3dc33cff-ab84-42cf-9ac6-6f7b9231cc43?action=share&source=collection_link&creator=5923902"
+	},
+	"item": [
+		{
+			"name": "import csv",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/computer-sale/csv",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"computer-sale",
+						"csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/computer-sale",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"computer-sale"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "export in html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/computer-sale?format=HTML",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"computer-sale"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "HTML"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
