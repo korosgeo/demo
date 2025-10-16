@@ -79,6 +79,18 @@ public class ComputerSaleService {
         }
     }
 
+    private void exportCsv(HttpServletResponse response) throws IOException {
+        /*
+        Would be done in the same way as HTML, but with CSV formatting
+         */
+    }
+
+    private void exportExcel(HttpServletResponse response) throws IOException {
+        /*
+        Would be done in the same way as HTML, but with Excel formatting
+         */
+    }
+
     private void exportHtml(HttpServletResponse response) throws IOException {
         response.setContentType("text/html;charset=UTF-8");
 
